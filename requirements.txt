@@ -1,0 +1,11 @@
+openai==1.66.3 
+pydub==0.25.1 
+pretty_midi==0.2.9 
+midi2audio==0.1.1 
+nltk==3.9.1 
+textblob==0.18.0.post0 
+pronouncing==0.2.0 
+magenta==2.1.4 
+note-seq==0.0.3 
+tensorflow==2.9.1 
+numpy==1.21.6

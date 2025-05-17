@@ -1,0 +1,4 @@
+# Ignore all files and subfolders in the output directory
+output/
+# Don't upload secret API keys
+config/secret.env

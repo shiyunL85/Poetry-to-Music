@@ -1,0 +1,35 @@
+{
+  "nlp_analysis": {
+    "input_file": "data/cleaned_poetry_data.json",
+    "output_file": "data/poetry_with_nlp_features.json",
+    "sentiment_threshold": 0.1,
+    "emotion_model": "j-hartmann/emotion-english-distilroberta-base",
+    "device": 0,
+    "keyword_top_n": 5,
+    "theme_categories": {
+      "Nature": ["nature", "trees", "flowers", "sky", "forest", "river", "mountain", "bird", "wind"],
+      "Love": ["love", "romance", "heart", "beloved", "passion"],
+      "Death": ["death", "grave", "dying", "funeral", "mourning"],
+      "War": ["war", "battle", "soldier", "fight", "army", "weapon"]
+    }
+  },
+  "music_mapping": {
+    "output_file": "data/poetry_with_music_params.json"
+  },
+  "recitation_generation": {
+    "ffmpeg_bin_path": "E:/Program Files/ffmpeg/bin",  
+    "openai_api_key": "__GPT_KEY__",
+    "openai_model": "gpt-4o"
+  },
+  "melody_generation": {
+    "ffmpeg_bin_path": "E:/Program Files/ffmpeg/bin",  
+    "soundfont_path": "E:/soundfonts/FluidR3_GM.sf2",  
+    "musicvae_checkpoint_path": "E:/jupyter_file/music/checkpoints/cat-mel_2bar_big/cat-mel_2bar_big.ckpt" 
+  },
+  "music_synthesis": {
+    "soundfont_path": "E:/soundfonts/FluidR3_GM.sf2",  
+    "ffmpeg_bin_path": "E:/Program Files/ffmpeg/bin",  
+    "recitation_volume": 1,
+    "melody_volume": 3
+  }
+}
